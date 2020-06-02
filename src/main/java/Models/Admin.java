@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Models;
 
-/**
- *
- * @author User
- */
+
 public class Admin {
+    public String UserName;
+    public String Password;
     
+    
+    public Admin(String UserName,String Password){
+        this.UserName=UserName;
+        this.Password=Password;
+        
+        
+        
+    
+    }
+    @Override
+    public String toString()
+    {
+        return "UserName "+this.UserName+" Password"+this.Password;
+    }
 }
